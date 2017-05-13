@@ -278,7 +278,6 @@ def ecdReader(ecd_filename,csv_filename='sonar_csv.csv',number_of_frames=7000):
 				dDataNew=dDataToInt(dData)
 
 				csv_file.write(str(timeOfTransmit)+',')
-				print framenumber
 
 				#writing of the uncompressed frame to a csv file
 				for i in range(numberOfBearings*numberOfRanges*bytesPerPixel):
@@ -319,4 +318,3 @@ def ecdReader(ecd_filename,csv_filename='sonar_csv.csv',number_of_frames=7000):
 if __name__ == '__main__':
   filename=str(sys.argv[1])
   ecdReader(filename)
-
