@@ -15,6 +15,7 @@ NUM_BEAMS=256
 # Input: a csv containing pixel values 
 # Output: a folder full of jpgs
 def build_jpgs(csv_file):
+	print "CONVERTING CSV TO jpgs"
 	with open(csv_file) as f:
 		reader = csv.reader(f)
 		for count,row in enumerate(reader):
