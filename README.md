@@ -14,6 +14,7 @@ To process an ecd file into a folder of JPG images:
 	python main.py ecd-filename [csv-filename] [number-of-frames-to-process]
 
 To run an example:
+	cd examples/
 	python main.py ../data/example.ecd
 
 
